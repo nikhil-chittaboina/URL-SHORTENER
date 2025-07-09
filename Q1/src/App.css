@@ -1,0 +1,90 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #1d4ed8;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.result-item {
+  background-color: #f3f4f6;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+}
+
+.stat-item {
+  background-color: #f3f4f6;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.redirecting {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+}
