@@ -191,10 +191,10 @@ Description: Redirects the user to the originalUrl associated with the given sho
 Behavior: This is a direct HTTP redirect handled by the backend. If the shortcode is not found or expired, it returns a 404 Not Found response.
 
 📸 Screenshots / Demo
-To make your repository truly shine, add screenshots or a GIF of your application in action here. You can link to images in your Output folder or embed them directly.
+
 
 1. User Interface (Initial View)
-This shows the main page where users can input URLs to shorten.
+This shows the main page where users can input URLs to shorten :![ User Interface](./Output/user_interface.png)
 
 2. Shortening a URL (Input & Result)
 Demonstrates the process of inputting a URL and the resulting shortened link.
