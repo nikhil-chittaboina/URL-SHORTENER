@@ -49,7 +49,7 @@ Before you begin, ensure you have the following installed:
 
 Node.js (LTS version recommended)
 
-npm (comes with Node.js) or Yarn
+npm (comes with Node.js) or [Yarn)
 
 Git
 
@@ -58,6 +58,7 @@ Clone the repository:
 
 git clone https://github.com/your-username/URL-SHORTENER.git
 cd URL-SHORTENER
+
 
 Set up the Backend:
 
@@ -88,10 +89,12 @@ Create a package.json file in the server directory with the following content:
   }
 }
 
+
 Install backend dependencies:
 
 cd server
 npm install # or yarn install
+
 
 Create a logger.js file in the server directory (next to index.js) with the following content:
 
@@ -105,6 +108,7 @@ const log = (service, level, type, message) => {
 
 module.exports = log;
 
+
 Create a .env file in the server directory (if you plan to add environment variables later, though not strictly needed for the current in-memory store).
 
 Navigate to the client directory and install dependencies:
@@ -112,12 +116,14 @@ Navigate to the client directory and install dependencies:
 cd ../client # Assuming your React app is in a 'client' folder
 npm install # or yarn install
 
+
 🏃‍♀️ Usage
 Start the Backend Server:
 Navigate to your backend directory (server) and start the server.
 
 cd server
 npm start # or npm run dev if you installed nodemon for auto-restarts
+
 
 Ensure your backend is running on http://localhost:5000.
 
@@ -127,7 +133,8 @@ Navigate back to the client directory (where this React app resides) and start t
 cd client
 npm start # or yarn start
 
-The application will typically open in your browser at http://localhost:3000.
+
+The application will typically open in your browser at http://localhost:5173.
 
 🌐 API Endpoints (as used by the frontend)
 This frontend interacts with the following backend API endpoints:
@@ -144,11 +151,13 @@ Request Body (JSON):
     "shortcode": "mycustomcode" // Optional: Desired custom shortcode.
 }
 
+
 Response (JSON):
 
 {
     "shortId": "generatedShortCode"
 }
+
 
 or an error object if there's an issue (e.g., shortcode already exists, invalid URL).
 
@@ -174,6 +183,7 @@ Response (JSON Array):
     // ... more URL objects
 ]
 
+
 GET /:shortCode
 
 Description: Redirects the user to the originalUrl associated with the given shortCode.
@@ -181,12 +191,21 @@ Description: Redirects the user to the originalUrl associated with the given sho
 Behavior: This is a direct HTTP redirect handled by the backend. If the shortcode is not found or expired, it returns a 404 Not Found response.
 
 📸 Screenshots / Demo
-(To make your repository truly shine, you should add screenshots or a GIF of your application in action here. You can link to images in your Output folder or embed them directly.)
 
-Example:
-You can replace link-to-your-screenshot-1.png with the actual path to your image in the Output folder or an external URL.
 
-(If you have deployed your application, provide a link to the live demo here.)
+1. User Interface (Initial View)
+This shows the main page where users can input URLs to shorten :![ User Interface](./Output/user_interface.png)
+
+2. Shortening a URL (Input & Result)
+Demonstrates the process of inputting a URL and the resulting shortened link.
+
+(If you have another screenshot like shortening_test2 that shows a different input or result, you can add it here too: ![Shortening Another URL Example](./Output/shortening_test2.png))
+
+3. Redirection in Action 
+When a user navigates to a shortened URL (e.g., http://localhost:5000/yourshortcode), the application instantly redirects them to the original long URL. This happens seamlessly in the browser.
+
+4. URL Statistics Page
+Displays the list of all shortened URLs, their original links, expiry times, and click data :  ![Statistics](./Output/statistics.png))
 
 Live Demo: [Your Demo Link Here (e.g., https://your-app-name.vercel.app/shorten)]
 
@@ -207,4 +226,5 @@ Open a Pull Request.
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ✍️ Author
+
 NikhilChittaboina - https://github.com/nikhil-chittaboina/URL-SHORTENER/
