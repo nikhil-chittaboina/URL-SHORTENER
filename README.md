@@ -201,17 +201,11 @@ Demonstrates the process of inputting a URL and the resulting shortened link.
 
 (If you have another screenshot like shortening_test2 that shows a different input or result, you can add it here too: ![Shortening Another URL Example](./Output/shortening_test2.png))
 
-3. Redirection in Action (Highly Recommended: GIF)
-Since redirection happens quickly, a GIF is the best way to show this. If a GIF is not possible, describe the process.
-
-(If you create a GIF for redirection, place it here)
-If you cannot create a GIF, describe it instead:
+3. Redirection in Action 
 When a user navigates to a shortened URL (e.g., http://localhost:5000/yourshortcode), the application instantly redirects them to the original long URL. This happens seamlessly in the browser.
 
 4. URL Statistics Page
-Displays the list of all shortened URLs, their original links, expiry times, and click data.
-
-(If you have deployed your application, provide a link to the live demo here.)
+Displays the list of all shortened URLs, their original links, expiry times, and click data :  ![Statistics](./Output/statistics.png))
 
 Live Demo: [Your Demo Link Here (e.g., https://your-app-name.vercel.app/shorten)]
 
