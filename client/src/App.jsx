@@ -4,7 +4,11 @@ import { BrowserRouter as Router, Routes, Route, useNavigate, useParams, Navigat
 import axios from "axios";
 
 
-const API = "https://url-shortener-1-36xd.onrender.com/";
+const API = "https://url-shortener-1-36xd.onrender.com/"; 
+
+// const API="https://localhost:5000"
+
+
 
 const styles = {
   wrapper: {
