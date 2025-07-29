@@ -6,7 +6,7 @@ const app = express();
 const { nanoid } = require('nanoid');
 const log = require('./logger');  // custom logger middleware
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const urlStore = new Map(); // In-memory store
 
 // Standard middlewares
