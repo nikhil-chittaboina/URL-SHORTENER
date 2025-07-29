@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate, useParams, Navigat
 import axios from "axios";
 
 
-const API = "url-shortener-git-main-nikhil-chittaboinas-projects.vercel.app";
+const API = "https://url-shortener-1-36xd.onrender.com/";
 
 const styles = {
   wrapper: {
